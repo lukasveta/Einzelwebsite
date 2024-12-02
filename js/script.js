@@ -29,7 +29,7 @@ function type() {
 }
 // Starte die Animation, wenn die Seite geladen wurde
 document.addEventListener("DOMContentLoaded", () => {
-    setTimeout(type, 500); 
+    setTimeout(type, 500);
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const sidebar = document.getElementById("sidebar");
 
     burgermenu.addEventListener("click", (event) => {
-            sidebar.classList.toggle("active");
+        sidebar.classList.toggle("active");
     });
 
     const closeSideBar = document.getElementById("closeSideBar");

@@ -40,18 +40,18 @@ body {
 
 .buttoncontainer {
     opacity: 0;
-    visibility: hidden; 
-    margin-top: 10px; 
-    display: flex; 
-    justify-content: center; 
-    gap: 20px; 
+    visibility: hidden;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     transition: opacity 0.3s ease, visibility 0s 0.3s;
 }
 
 .buttoncontainer.visible {
-    opacity: 1; 
-    visibility: visible; 
-    transition: opacity 0.8s ease, visibility 0s 0s; 
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.8s ease, visibility 0s 0s;
 }
 
 .button {
@@ -159,7 +159,8 @@ a:hover {
 }
 
 a:visited {
-    text-decoration: none;;
+    text-decoration: none;
+    ;
 }
 
 p {
