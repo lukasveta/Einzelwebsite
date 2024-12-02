@@ -1,0 +1,167 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 9rem;
+    overflow: hidden;
+}
+
+.typing-container {
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    background-color: #ffffff;
+    margin-left: 5px;
+    animation: blink 0.8s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% {
+        background-color: transparent;
+    }
+}
+
+.buttoncontainer {
+    opacity: 0;
+    visibility: hidden; 
+    margin-top: 10px; 
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    transition: opacity 0.3s ease, visibility 0s 0.3s;
+}
+
+.buttoncontainer.visible {
+    opacity: 1; 
+    visibility: visible; 
+    transition: opacity 0.8s ease, visibility 0s 0s; 
+}
+
+.button {
+    background-color: #31ab08;
+    color: white;
+    border: none;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 0px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 60%;
+    user-select: none;
+}
+
+.button:hover {
+    background-color: #42e00d;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+}
+
+h3 {
+    color: #42e00d;
+}
+
+.modalContent {
+    background-color: #181818;
+    color: #ffffff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 50px;
+    width: 50%;
+    font-size: 50%;
+    border-color: #ffffff;
+    border-style: outset;
+    user-select: none;
+}
+
+.close:hover {
+    cursor: pointer;
+}
+
+#burgericon {
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: -20px;
+}
+
+#burgermenu.button {
+    position: fixed;
+    margin: 20px;
+    top: 0;
+    right: 0;
+    height: auto;
+    width: 100px;
+}
+
+#footer {
+    font-size: 40%;
+    display: flex;
+    gap: 50px;
+    position: fixed;
+    bottom: 0px;
+    margin: 35px;
+}
+
+#sidebar {
+    display: none;
+
+}
+
+#sidebar.active {
+    transition: 0.5s;
+    background-color: #181818;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 100vh;
+}
+
+.lang {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 40%;
+    margin: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+    color: #42e00d;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:visited {
+    text-decoration: none;;
+}
+
+p {
+    margin: 5px;
+}
